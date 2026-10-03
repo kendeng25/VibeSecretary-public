@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "foundation": {
+      "command": "D:\\MyApps\\VibeSecretary\\.venv\\Scripts\\vibe-secretary-mcp.exe",
+      "args": []
+    }
+  }
+}

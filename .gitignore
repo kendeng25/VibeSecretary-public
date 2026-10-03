@@ -1,0 +1,16 @@
+refs/
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.coverage
+.pytest_cache/
+.vibesecretary/cache/
+.vibesecretary/logs/
+
+# Internal development records
+AGENTS.md
+plans/
+build_hist/
+memory/

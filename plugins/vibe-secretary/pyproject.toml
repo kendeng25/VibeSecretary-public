@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vibe-secretary"
+version = "0.1.0"
+description = "Python runtime for the VibeSecretary Codex plugin."
+requires-python = ">=3.12"
+dependencies = [
+  "mcp==2.0.0",
+  "pathspec==1.1.1",
+  "PyYAML==6.0.3",
+]
+
+[project.scripts]
+vibe-secretary-mcp = "vibe_secretary.mcp_server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

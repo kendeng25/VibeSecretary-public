@@ -1,0 +1,48 @@
+{
+  "description": "VibeSecretary lifecycle, read-scope, and Prompt Copilot hooks.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${PLUGIN_ROOT}/hooks/session_start.py\"",
+            "commandWindows": "cmd.exe /d /c call \"%PLUGIN_ROOT%\\scripts\\run_hook.cmd\" session-start",
+            "timeout": 10,
+            "additionalContextLimit": 200,
+            "statusMessage": "Checking VibeSecretary project status"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|apply_patch|Read|Glob|Grep|mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${PLUGIN_ROOT}/hooks/pre_tool_use.py\"",
+            "commandWindows": "cmd.exe /d /c call \"%PLUGIN_ROOT%\\scripts\\run_hook.cmd\" pre-tool-use",
+            "timeout": 10,
+            "statusMessage": "Checking VibeSecretary read scope"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${PLUGIN_ROOT}/hooks/user_prompt_submit.py\"",
+            "commandWindows": "cmd.exe /d /c call \"%PLUGIN_ROOT%\\scripts\\run_hook.cmd\" user-prompt-submit",
+            "timeout": 10,
+            "additionalContextLimit": 900,
+            "statusMessage": "Preparing Prompt Copilot context"
+          }
+        ]
+      }
+    ]
+  }
+}

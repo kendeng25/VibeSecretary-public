@@ -1,0 +1,7 @@
+interface:
+  display_name: "VibeSecretary Implementation Lens"
+  short_description: "Explain code as an evidence-linked semantic Story."
+  default_prompt: "Use $vibe-secretary-implementation-lens for @lens to explain this implementation at symbol granularity."
+
+policy:
+  allow_implicit_invocation: false
