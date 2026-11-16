@@ -1,0 +1,34 @@
+{
+  "name": "vibe-secretary",
+  "version": "0.1.0+codex.20260821111426",
+  "description": "Local project context, process documents, evidence-linked implementation stories, and Prompt Copilot workflows for Codex.",
+  "author": {
+    "name": "VibeSecretary contributors"
+  },
+  "keywords": [
+    "vibe-coding",
+    "project-context",
+    "developer-productivity"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VibeSecretary",
+    "shortDescription": "Manage project context and improve development Prompts.",
+    "longDescription": "VibeSecretary provides a Python local foundation, Process Hub, explicit @lens semantic implementation stories, and Codex Host Prompt Copilot. Confirm project scope, manage process documents, explain code from static evidence, and improve development prompts without external model calls.",
+    "developerName": "VibeSecretary contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Local tools",
+      "Process documents",
+      "Implementation stories",
+      "Prompt optimization"
+    ],
+    "defaultPrompt": [
+      "@lens explain this feature implementation at symbol granularity",
+      "Review this development Prompt with project evidence.",
+      "Review this project's Process Hub consistency."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

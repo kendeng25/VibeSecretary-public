@@ -1,0 +1,7 @@
+interface:
+  display_name: "VibeSecretary Process Hub"
+  short_description: "Create and manage project process records."
+  default_prompt: "Use $vibe-secretary-process-hub to apply this project's confirmed process-document workflow."
+
+policy:
+  allow_implicit_invocation: true

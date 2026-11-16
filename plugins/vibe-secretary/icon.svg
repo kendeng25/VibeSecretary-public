@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="VibeSecretary">
+  <rect width="64" height="64" rx="14" fill="#0f6cbd"/>
+  <rect x="17" y="12" width="30" height="40" rx="3" fill="#ffffff"/>
+  <g stroke="#0f6cbd" stroke-width="3" stroke-linecap="round">
+    <path d="M23 24h18"/>
+    <path d="M23 32h18"/>
+    <path d="M23 40h11"/>
+  </g>
+  <path d="M25 44l3 3 6-6" fill="none" stroke="#2fb344" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

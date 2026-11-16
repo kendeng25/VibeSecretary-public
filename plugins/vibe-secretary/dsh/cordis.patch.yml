@@ -1,0 +1,11 @@
+- insert:
+    - id: vibe-secretary-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: vibesecretary
+        transport: stdio
+        command: vibe-secretary-mcp
+        args: []
+    - id: vibe-secretary-dsh
+      name: '@kendeng/vibe-secretary-dsh'
+      config: {}

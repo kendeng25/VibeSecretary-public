@@ -1,0 +1,18 @@
+{
+  "name": "@kendeng/vibe-secretary-dsh",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "VibeSecretary for DeepSeek Harness: local project context, Process Hub documents, evidence-linked implementation stories, and Prompt Copilot workflows.",
+  "exports": {
+    ".": "./dsh/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["dsh", "locale", "icon.svg", "skills", "docs", "README.md"],
+  "dsh": {
+    "bundle": {
+      "patch": "./dsh/cordis.patch.yml"
+    }
+  }
+}

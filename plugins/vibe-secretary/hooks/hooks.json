@@ -1,0 +1,48 @@
+{
+  "description": "VibeSecretary lifecycle, read-scope, and Prompt Copilot hooks.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "vibe-secretary-hook session-start",
+            "commandWindows": "cmd.exe /d /c vibe-secretary-hook session-start",
+            "timeout": 10,
+            "additionalContextLimit": 200,
+            "statusMessage": "Checking VibeSecretary project status"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|apply_patch|Read|Glob|Grep|mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "vibe-secretary-hook pre-tool-use",
+            "commandWindows": "cmd.exe /d /c vibe-secretary-hook pre-tool-use",
+            "timeout": 10,
+            "statusMessage": "Checking VibeSecretary read scope"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "vibe-secretary-hook user-prompt-submit",
+            "commandWindows": "cmd.exe /d /c vibe-secretary-hook user-prompt-submit",
+            "timeout": 10,
+            "additionalContextLimit": 900,
+            "statusMessage": "Preparing Prompt Copilot context"
+          }
+        ]
+      }
+    ]
+  }
+}

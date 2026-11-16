@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "foundation": {
+      "command": "vibe-secretary-mcp",
+      "args": []
+    }
+  }
+}

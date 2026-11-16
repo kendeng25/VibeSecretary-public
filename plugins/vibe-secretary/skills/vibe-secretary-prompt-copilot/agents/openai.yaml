@@ -1,0 +1,7 @@
+interface:
+  display_name: "VibeSecretary Prompt Copilot"
+  short_description: "Optimize development Prompts with project context."
+  default_prompt: "Use $vibe-secretary-prompt-copilot to review and improve this development Prompt."
+
+policy:
+  allow_implicit_invocation: false

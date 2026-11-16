@@ -1,0 +1,7 @@
+interface:
+  display_name: "VibeSecretary Foundation"
+  short_description: "Initialize and diagnose the local plugin foundation."
+  default_prompt: "Use $vibe-secretary-foundation to check this project's VibeSecretary foundation status."
+
+policy:
+  allow_implicit_invocation: true

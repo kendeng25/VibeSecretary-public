@@ -1,0 +1,11 @@
+refs/
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+.coverage
+.pytest_cache/
+.vibesecretary/cache/
+.vibesecretary/logs/
